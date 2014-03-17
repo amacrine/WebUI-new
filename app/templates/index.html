@@ -1,0 +1,34 @@
+<div id="menu-top" class="ui-header ui-bar-f ui-header-fixed slidedown" data-position="fixed" data-role="header" role="banner">
+    <div class="dropdown">
+        <a class="dropdown-toggle" id="menu-settings" role="button" data-toggle="dropdown" data-target="#" href="<?php echo $sezione ?>.php">MENU <i class="icon-th-list dx"></i></a>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="menu-settings">
+            <li class="index"><a href="index.php"><i class="icon-play sx"></i> Main</a></li>
+            <li class="sources"><a href="sources.php"><i class="icon-folder-open sx"></i> Library</a></li>
+            <li class="mpd-config"><a href="mpd-config.php"><i class="icon-cogs sx"></i> Playback</a></li>
+            <li class="net-config"><a href="net-config.php"><i class="icon-sitemap sx"></i> Network</a></li>
+            <li class="settings"><a href="settings.php"><i class="icon-wrench sx"></i> System</a></li>
+            <li class="credits"><a href="credits.php"><i class="icon-trophy sx"></i> Credits</a></li>
+            <li><a href="#poweroff-modal" data-toggle="modal"><i class="icon-power-off sx"></i> Turn off</a></li>
+        </ul>
+    </div>
+    <div class="playback-controls"> 
+        <button id="previous" class="btn btn-cmd" title="Previous"><i class="icon-step-backward"></i></button>
+        <button id="stop" class="btn btn-cmd" title="Stop"><i class="icon-stop"></i></button>
+        <button id="play" class="btn btn-cmd" title="Play/Pause"><i class="icon-play"></i></button>
+        <button id="next" class="btn btn-cmd" title="Next"><i class="icon-step-forward"></i></button>
+    </div>
+    <a class="home" href="index">
+        Home
+    </a>
+</div>
+<div id="menu-bottom" class="ui-footer ui-bar-f ui-footer-fixed slidedown" data-position="fixed" data-role="footer"  role="banner">
+    <ul>
+        <li id="open-panel-sx"><a href="#panel-sx" class="open-panel-sx" data-toggle="tab"><i class="icon-music sx"></i> Browse</a></li>
+        <li id="open-playback" class="active"><a href="#playback" class="close-panels" data-toggle="tab"><i class="icon-play sx"></i> Playback</a></li>
+        <li id="open-panel-dx"><a href="#panel-dx" class="open-panel-dx" data-toggle="tab"><i class="icon-list sx"></i> Playlist</a></li>
+    </ul>
+</div>
+
+
+<button class="play">play</button>
+<button class="stop">stop</button>

@@ -1,0 +1,12 @@
+{
+    "name": "tpp-emb-server",
+    "version": "0.0.1",
+    "description": "The Party Player",
+    "dependencies": {
+        "socket.io": "0.9.16",
+        "express": "latest",
+        "jade": "latest",
+        "mpd": "1.0.2"
+    },
+    "author": "tpp"
+}
