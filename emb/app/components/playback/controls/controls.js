@@ -38,7 +38,7 @@ define(function(require, exports, module) {
         });
     },
     next: function() {
-        this.socket.emit('next', {}, function (data) {
+        this.socket.emit('controls:next', {}, function (data) {
         });
     },
     state: function() {
