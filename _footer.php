@@ -13,9 +13,10 @@
 		</div>
 	</div>
 </form>
+<script data-main="/emb/app/main-compat" src="/emb/vendor/bower/requirejs/require.js"></script>
 <!-- loader -->
 <div id="loader"><div id="loaderbg"></div><div id="loadercontent"><i class="icon-refresh icon-spin"></i>connecting...</div></div>
-<script src="js/jquery-1.8.2.min.js"></script>
+<script src="js/jquery.js"></script>
 <script src="js/jquery-ui-1.10.0.custom.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/bootstrap-select.min.js"></script>
@@ -24,12 +25,16 @@
 <script src="js/jquery.countdown-it.js"></script>
 <script src="js/jquery.scrollTo.min.js"></script>
 <script src="js/player_lib.js"></script>
+
 <?php if ($sezione == 'index') { ?>
+
 <script src="js/jquery.knob.js"></script>
 <script src="js/bootstrap-contextmenu.js"></script>
 <script src="js/jquery.pnotify.min.js"></script>
 <script src="js/scripts-playback.js"></script>
+
 <?php } else { ?>
+
 <!--<script src="js/jquery.dropkick-1.0.0.js"></script>-->
 <script src="js/custom_checkbox_and_radio.js"></script>
 <script src="js/custom_radio.js"></script>
@@ -41,7 +46,9 @@
 <script src="js/scripts-configuration.js"></script>
 <script src="js/jquery.pnotify.min.js"></script>
 <script src="js/bootstrap-fileupload.js"></script>
+
 <?php } ?>
+
 <!--[if lt IE 8]>
 <script src="js/icon-font-ie7.js"></script>
 <script src="js/icon-font-ie7-24.js"></script>
@@ -63,5 +70,6 @@ session_write_close();
 		?>
 	</pre>
 </div>
+
 </body>
 </html>

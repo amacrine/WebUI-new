@@ -13,7 +13,9 @@ define(function(require, exports, module) {
             this.socket = io.connect('http://volumio.local:8080');
             
             this.socket.on('connect', function (data) {
-                console.log("connect");
+                self.socket.on("mpd:status", function(params)) {
+                    app.pubsub.trigger("mpd:status", params)
+                }
             });
             
             var Layout = Backbone.Layout.extend({

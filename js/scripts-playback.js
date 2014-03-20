@@ -65,7 +65,10 @@ jQuery(document).ready(function($){ 'use strict';
     // BUTTONS
     // ----------------------------------------------------------------------------------------------------
     // playback
+    console.log("playback");
+    
     $('.btn-cmd').click(function(){
+        console.log("btn cmd");
         var cmd;
         // stop
         if ($(this).attr('id') == 'stop') {

@@ -37,6 +37,7 @@ jQuery(document).ready(function($){ 'use strict';
 	// BUTTONS
     // ----------------------------------------------------------------------------------------------------
     // playback
+	console.log("configuration");
     $('.btn-cmd').click(function(){
         var cmd;
         // stop

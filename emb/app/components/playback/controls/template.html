@@ -1,0 +1,24 @@
+<button id="previous" class="btn previous" title="Previous"><i class="icon-step-backward"></i></button>
+
+{{#iffun "isStopped" this.playerStatus}}
+<button id="stop" class="btn btn-primary stop" title="Stop"><i class="icon-stop"></i></button>
+{{else}}
+<button id="stop" class="btn stop" title="Stop"><i class="icon-stop"></i></button>
+{{/iffun}}
+
+{{#iffun "isStopped" this.playerStatus}}
+<button id="play" class="btn play" title="Play/Pause">
+    <i class="icon-play"></i>
+{{else}}
+    {{#iffun "isPlaying" this.playerStatus}}
+    <button id="play" class="btn btn-primary play" title="Play/Pause">
+        <i class="icon-play"></i>
+    {{/iffun}}
+    {{#iffun "isPaused" this.playerStatus}}
+    <button id="play" class="btn btn-primary play" title="Play/Pause">
+        <i class="icon-pause"></i>
+    {{/iffun}}
+{{/iffun}}
+</button>
+
+<button id="next" class="btn next" title="Next"><i class="icon-step-forward"></i></button>

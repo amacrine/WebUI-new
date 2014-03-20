@@ -20,19 +20,19 @@
  *
  *
  *  version:	1.1-dev
- * 
+ *
  *  Andrea Coiutti (aka ACX)
  *  PlayerUI frontend design - frontend HTML/JS/CSS coding
- * 
- *  Simone De Gregori (aka Orion) 
+ *
+ *  Simone De Gregori (aka Orion)
  *  PlayerUI PHP backend coding - frontend JS coding - OS optimization
- * 
+ *
  *
  *  RaspyFi Project (C) 2013 Michelangelo Guarise (OS image build/customization)
  *
  *  RaspyFi Logo design (C) 2013 Daniele Busciantella Ricci
  *
- */ 
+ */
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -65,7 +65,7 @@
 <body class="<?php echo $sezione ?>">
 
 <div id="menu-top" class="ui-header ui-bar-f ui-header-fixed slidedown" data-position="fixed" data-role="header" role="banner">
-	<div class="dropdown">
+	<div id="menu-dropdown" class="dropdown">
 		<a class="dropdown-toggle" id="menu-settings" role="button" data-toggle="dropdown" data-target="#" href="<?php echo $sezione ?>.php">MENU <i class="icon-th-list dx"></i></a>
 		<ul class="dropdown-menu" role="menu" aria-labelledby="menu-settings">
 			<li class="<?php ami('index'); ?>"><a href="index.php"><i class="icon-play sx"></i> Main</a></li>
@@ -77,14 +77,11 @@
 			<li><a href="#poweroff-modal" data-toggle="modal"><i class="icon-power-off sx"></i> Turn off</a></li>
 		</ul>
 	</div>
-	<div class="playback-controls">	
-		<button id="previous" class="btn btn-cmd" title="Previous"><i class="icon-step-backward"></i></button>
-		<button id="stop" class="btn btn-cmd" title="Stop"><i class="icon-stop"></i></button>
-		<button id="play" class="btn btn-cmd" title="Play/Pause"><i class="icon-play"></i></button>
-		<button id="next" class="btn btn-cmd" title="Next"><i class="icon-step-forward"></i></button>
-	</div>
-	<a class="home" href="index.php">
-			The Party Player</a>
+
+	<a id="home" class="home" href="index.php">
+	   <img src="images/logo.png" class="logo" alt="RaspyFi">
+	</a>
+
 </div>
 <div id="menu-bottom" class="ui-footer ui-bar-f ui-footer-fixed slidedown" data-position="fixed" data-role="footer"  role="banner">
 	<ul>

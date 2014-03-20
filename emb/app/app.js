@@ -5,12 +5,13 @@ define(function(require, exports, module) {
     var Backbone = require("backbone");
     var Layout = require("layoutmanager");
     var Handlebars = require("handlebars");
-
+        require("helpers");
+    
     // Alias the module for easier identification.
     var app = module.exports;
 
     // The root path to run the application through.
-    app.root = "/tpp";
+    app.root = "/emb/app";
     
 
     // API endpoint.
@@ -34,7 +35,6 @@ define(function(require, exports, module) {
                 return $.ajax({
                     url: path
                 }).then(function(contents) {
-                    console.log(contents);
                     JST[path] = Handlebars.compile(contents);
                     JST[path].__compiled__ = true;
                     done(JST[path]);
