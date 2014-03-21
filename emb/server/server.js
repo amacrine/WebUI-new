@@ -4,6 +4,10 @@ var io = require('socket.io')
 var mpd = require('mpd'); 
 var cmd = mpd.cmd;
 
+var spotify = require('./node_modules/node-spotify/build/Release/spotify')( {
+    appkeyFile: './spotify_appkey.key'
+});
+
 var MpdManager = require('./lib/MpdManager');
 var MpdMgr = new MpdManager();
 

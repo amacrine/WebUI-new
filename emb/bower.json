@@ -1,5 +1,5 @@
 {
-  "name": "backbone-boilerplate",
+  "name": "volumio",
   "dependencies": {
     "almond": "~0.2.5",
     "underscore": "1.6",

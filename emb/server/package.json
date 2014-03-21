@@ -6,7 +6,8 @@
         "socket.io": "0.9.16",
         "express": "latest",
         "jade": "latest",
-        "mpd": "1.0.2"
+        "mpd": "1.0.2",
+	   "node-spotify": "0.5.0"
     },
     "author": "tpp"
 }
