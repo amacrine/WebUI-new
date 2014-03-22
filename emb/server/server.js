@@ -4,9 +4,24 @@ var io = require('socket.io')
 var mpd = require('mpd'); 
 var cmd = mpd.cmd;
 
-var spotify = require('./node_modules/node-spotify/build/Release/spotify')( {
-    appkeyFile: './spotify_appkey.key'
-});
+//var spotify = require('./node_modules/node-spotify/build/Release/spotify')( {
+//    appkeyFile: '/var/www/emb/server/spotify_appkey.key',
+//});
+//
+//var playlists;
+//var playlistContainer;
+
+//spotify.ready( function() {
+//    console.log("spo ready");
+//    playlistContainer = spotify.playlistContainer;
+//    playlists = playlistContainer.getPlaylists();
+//    console.log(playlists);
+//    var track = spotify.createFromLink('spotify:track:5T2Cft0v1qKSmH0GUDzB2b');
+////    var track = playlist.getTracks()[0];
+//    spotify.player.play(track);
+//});
+//
+//spotify.login('dg.kaba', 'guigui040181', true, false);
 
 var MpdManager = require('./lib/MpdManager');
 var MpdMgr = new MpdManager();
