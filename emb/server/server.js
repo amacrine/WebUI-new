@@ -21,7 +21,7 @@ var cmd = mpd.cmd;
 //    spotify.player.play(track);
 //});
 //
-//spotify.login('dg.kaba', 'guigui040181', true, false);
+//spotify.login('dg.kaba', '****', true, false);
 
 var MpdManager = require('./lib/MpdManager');
 var MpdMgr = new MpdManager();
